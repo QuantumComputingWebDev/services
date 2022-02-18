@@ -5,3 +5,11 @@ services:
     network_mode: "host"
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
+  q-postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=quantom
+      - POSTGRES_DB=event
