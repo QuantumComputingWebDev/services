@@ -1,0 +1,488 @@
+2022/02/18 17:50:01 [notice] 1#1: using the "epoll" event method
+2022/02/18 17:50:01 [notice] 1#1: nginx/1.21.3
+2022/02/18 17:50:01 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2022/02/18 17:50:01 [notice] 1#1: OS: Linux 5.13.0-28-generic
+2022/02/18 17:50:01 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/02/18 17:50:01 [notice] 1#1: start worker processes
+2022/02/18 17:50:01 [notice] 1#1: start worker process 25
+2022/02/18 17:50:01 [notice] 1#1: start worker process 26
+2022/02/18 17:50:01 [notice] 1#1: start worker process 27
+2022/02/18 17:50:01 [notice] 1#1: start worker process 28
+2022/02/18 17:50:01 [notice] 1#1: start worker process 29
+2022/02/18 17:50:01 [notice] 1#1: start worker process 30
+2022/02/18 17:50:01 [notice] 1#1: start worker process 31
+2022/02/18 17:50:01 [notice] 1#1: start worker process 32
+2022/02/18 17:50:12 [error] 26#26: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://172.17.0.1:3000/", host: "localhost:8888"
+2022/02/18 17:50:12 [error] 26#26: *1 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://172.17.0.1:3000/", host: "localhost:8888"
+2022/02/18 17:50:14 [info] 26#26: *1 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:50:14 [info] 25#25: *2 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:50:18 [error] 25#25: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://172.17.0.1:3000/", host: "localhost:8888"
+2022/02/18 17:50:18 [error] 25#25: *4 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://172.17.0.1:3000/", host: "localhost:8888"
+2022/02/18 17:50:19 [info] 25#25: *5 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:50:19 [info] 25#25: *4 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:50:23 [error] 25#25: *7 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://172.17.0.1:3000/", host: "localhost:8888"
+2022/02/18 17:50:23 [error] 25#25: *7 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", upstream: "http://172.17.0.1:3000/", host: "localhost:8888"
+2022/02/18 17:50:24 [info] 25#25: *8 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:50:24 [info] 25#25: *7 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:50:36 [error] 25#25: *10 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", upstream: "http://172.17.0.1:3000/static/js/bundle.js", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:50:36 [error] 25#25: *10 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", upstream: "http://172.17.0.1:3000/static/js/bundle.js", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:50:36 [error] 25#25: *14 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", upstream: "http://172.17.0.1:3000/manifest.json", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:50:36 [error] 25#25: *14 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", upstream: "http://172.17.0.1:3000/manifest.json", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:50:39 [info] 25#25: *11 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:50:39 [info] 25#25: *10 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:50:39 [info] 25#25: *14 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:51:40 [error] 25#25: *16 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", upstream: "http://172.17.0.1:3000/static/js/bundle.js", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:51:40 [error] 25#25: *16 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", upstream: "http://172.17.0.1:3000/static/js/bundle.js", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:51:40 [error] 25#25: *20 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", upstream: "http://172.17.0.1:3000/manifest.json", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:51:40 [error] 25#25: *20 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", upstream: "http://172.17.0.1:3000/manifest.json", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:51:44 [info] 25#25: *17 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:51:44 [info] 25#25: *16 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:51:44 [info] 25#25: *20 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:53:00 [error] 26#26: *22 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /admin/ HTTP/1.1", upstream: "http://172.17.0.1:5000/", host: "localhost:8888"
+2022/02/18 17:53:00 [error] 26#26: *22 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /admin/ HTTP/1.1", upstream: "http://172.17.0.1:5000/", host: "localhost:8888"
+2022/02/18 17:53:04 [info] 25#25: *23 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:53:04 [info] 26#26: *22 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:53:44 [info] 25#25: *25 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:54:56 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/02/18 17:54:56 [notice] 25#25: gracefully shutting down
+2022/02/18 17:54:56 [notice] 26#26: gracefully shutting down
+2022/02/18 17:54:56 [notice] 29#29: gracefully shutting down
+2022/02/18 17:54:56 [notice] 25#25: exiting
+2022/02/18 17:54:56 [notice] 26#26: exiting
+2022/02/18 17:54:56 [notice] 31#31: gracefully shutting down
+2022/02/18 17:54:56 [notice] 32#32: gracefully shutting down
+2022/02/18 17:54:56 [notice] 32#32: exiting
+2022/02/18 17:54:56 [notice] 28#28: gracefully shutting down
+2022/02/18 17:54:56 [notice] 30#30: gracefully shutting down
+2022/02/18 17:54:56 [notice] 30#30: exiting
+2022/02/18 17:54:56 [notice] 32#32: exit
+2022/02/18 17:54:56 [notice] 28#28: exiting
+2022/02/18 17:54:56 [notice] 30#30: exit
+2022/02/18 17:54:56 [notice] 25#25: exit
+2022/02/18 17:54:56 [notice] 28#28: exit
+2022/02/18 17:54:56 [notice] 26#26: exit
+2022/02/18 17:54:56 [notice] 31#31: exiting
+2022/02/18 17:54:56 [notice] 31#31: exit
+2022/02/18 17:54:56 [notice] 27#27: gracefully shutting down
+2022/02/18 17:54:56 [notice] 27#27: exiting
+2022/02/18 17:54:56 [notice] 27#27: exit
+2022/02/18 17:54:56 [notice] 29#29: exiting
+2022/02/18 17:54:56 [notice] 29#29: exit
+2022/02/18 17:54:56 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/02/18 17:54:56 [notice] 1#1: worker process 30 exited with code 0
+2022/02/18 17:54:56 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 17:54:56 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/02/18 17:54:56 [notice] 1#1: worker process 31 exited with code 0
+2022/02/18 17:54:56 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 17:54:56 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/02/18 17:54:56 [notice] 1#1: worker process 26 exited with code 0
+2022/02/18 17:54:56 [notice] 1#1: worker process 29 exited with code 0
+2022/02/18 17:54:56 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 17:54:56 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/02/18 17:54:56 [notice] 1#1: worker process 25 exited with code 0
+2022/02/18 17:54:56 [notice] 1#1: worker process 28 exited with code 0
+2022/02/18 17:54:56 [notice] 1#1: worker process 32 exited with code 0
+2022/02/18 17:54:56 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 17:54:56 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/02/18 17:54:56 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/02/18 17:54:56 [notice] 1#1: worker process 27 exited with code 0
+2022/02/18 17:54:56 [notice] 1#1: exit
+2022/02/18 17:54:58 [notice] 1#1: using the "epoll" event method
+2022/02/18 17:54:58 [notice] 1#1: nginx/1.21.3
+2022/02/18 17:54:58 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2022/02/18 17:54:58 [notice] 1#1: OS: Linux 5.13.0-28-generic
+2022/02/18 17:54:58 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/02/18 17:54:58 [notice] 1#1: start worker processes
+2022/02/18 17:54:58 [notice] 1#1: start worker process 24
+2022/02/18 17:54:58 [notice] 1#1: start worker process 25
+2022/02/18 17:54:58 [notice] 1#1: start worker process 26
+2022/02/18 17:54:58 [notice] 1#1: start worker process 27
+2022/02/18 17:54:58 [notice] 1#1: start worker process 28
+2022/02/18 17:54:58 [notice] 1#1: start worker process 29
+2022/02/18 17:54:58 [notice] 1#1: start worker process 30
+2022/02/18 17:54:58 [notice] 1#1: start worker process 31
+2022/02/18 17:55:06 [error] 24#24: *1 open() "/etc/nginx/html/static/js/bundle.js" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:06 [error] 24#24: *1 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:06 [error] 24#24: *4 open() "/etc/nginx/html/manifest.json" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:06 [error] 24#24: *4 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:10 [info] 24#24: *2 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:55:10 [info] 24#24: *1 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:55:10 [info] 24#24: *4 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:55:15 [info] 24#24: *5 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:55:15 [info] 24#24: *6 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:55:23 [error] 24#24: *7 open() "/etc/nginx/html/static/js/bundle.js" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:23 [error] 24#24: *7 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:24 [error] 24#24: *10 open() "/etc/nginx/html/manifest.json" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:24 [error] 24#24: *10 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:25 [info] 24#24: *8 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:55:25 [info] 24#24: *7 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:55:25 [info] 24#24: *10 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:55:42 [error] 24#24: *11 open() "/etc/nginx/html/static/js/bundle.js" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:42 [error] 24#24: *11 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:42 [error] 24#24: *14 open() "/etc/nginx/html/manifest.json" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:42 [error] 24#24: *14 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:45 [info] 24#24: *12 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:55:45 [info] 24#24: *11 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:55:45 [info] 24#24: *14 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:55:49 [error] 24#24: *15 open() "/etc/nginx/html/static/js/bundle.js" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:49 [error] 24#24: *15 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:49 [error] 24#24: *18 open() "/etc/nginx/html/manifest.json" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:49 [error] 24#24: *18 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:55 [error] 24#24: *15 open() "/etc/nginx/html/static/js/bundle.js" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:55 [error] 24#24: *15 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:55 [error] 24#24: *18 open() "/etc/nginx/html/manifest.json" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:55 [error] 24#24: *18 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:55:55 [info] 24#24: *16 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:55:55 [info] 24#24: *15 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:55:55 [info] 24#24: *18 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:56:03 [error] 24#24: *20 open() "/etc/nginx/html/static/js/bundle.js" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:56:03 [error] 24#24: *20 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:56:03 [error] 24#24: *23 open() "/etc/nginx/html/manifest.json" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:56:03 [error] 24#24: *23 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 17:56:05 [info] 24#24: *21 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 17:56:05 [info] 24#24: *20 client 127.0.0.1 closed keepalive connection
+2022/02/18 17:56:05 [info] 24#24: *23 client 127.0.0.1 closed keepalive connection
+2022/02/18 18:11:26 [error] 24#24: *24 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8888"
+2022/02/18 18:11:26 [error] 24#24: *24 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8888"
+2022/02/18 18:11:35 [info] 24#24: *25 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 18:11:35 [info] 24#24: *24 client 127.0.0.1 closed keepalive connection
+2022/02/18 18:11:42 [error] 24#24: *26 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8888"
+2022/02/18 18:11:42 [error] 24#24: *26 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8888"
+2022/02/18 18:11:45 [info] 24#24: *27 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 18:11:45 [info] 24#24: *26 client 127.0.0.1 closed keepalive connection
+2022/02/18 18:12:11 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/02/18 18:12:11 [notice] 24#24: gracefully shutting down
+2022/02/18 18:12:11 [notice] 24#24: exiting
+2022/02/18 18:12:11 [notice] 31#31: gracefully shutting down
+2022/02/18 18:12:11 [notice] 31#31: exiting
+2022/02/18 18:12:11 [notice] 24#24: exit
+2022/02/18 18:12:11 [notice] 30#30: gracefully shutting down
+2022/02/18 18:12:11 [notice] 31#31: exit
+2022/02/18 18:12:11 [notice] 30#30: exiting
+2022/02/18 18:12:11 [notice] 30#30: exit
+2022/02/18 18:12:11 [notice] 29#29: gracefully shutting down
+2022/02/18 18:12:11 [notice] 29#29: exiting
+2022/02/18 18:12:11 [notice] 29#29: exit
+2022/02/18 18:12:11 [notice] 25#25: gracefully shutting down
+2022/02/18 18:12:11 [notice] 25#25: exiting
+2022/02/18 18:12:11 [notice] 25#25: exit
+2022/02/18 18:12:11 [notice] 27#27: gracefully shutting down
+2022/02/18 18:12:11 [notice] 27#27: exiting
+2022/02/18 18:12:11 [notice] 28#28: gracefully shutting down
+2022/02/18 18:12:11 [notice] 27#27: exit
+2022/02/18 18:12:11 [notice] 28#28: exiting
+2022/02/18 18:12:11 [notice] 26#26: gracefully shutting down
+2022/02/18 18:12:11 [notice] 28#28: exit
+2022/02/18 18:12:11 [notice] 26#26: exiting
+2022/02/18 18:12:11 [notice] 26#26: exit
+2022/02/18 18:12:11 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/02/18 18:12:11 [notice] 1#1: worker process 29 exited with code 0
+2022/02/18 18:12:11 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 18:12:11 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/02/18 18:12:11 [notice] 1#1: worker process 24 exited with code 0
+2022/02/18 18:12:11 [notice] 1#1: worker process 26 exited with code 0
+2022/02/18 18:12:11 [notice] 1#1: worker process 28 exited with code 0
+2022/02/18 18:12:11 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 18:12:11 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/02/18 18:12:11 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/02/18 18:12:11 [notice] 1#1: worker process 30 exited with code 0
+2022/02/18 18:12:11 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 18:12:11 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/02/18 18:12:11 [notice] 1#1: worker process 25 exited with code 0
+2022/02/18 18:12:11 [notice] 1#1: worker process 31 exited with code 0
+2022/02/18 18:12:11 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 18:12:11 [notice] 1#1: signal 17 (SIGCHLD) received from 27
+2022/02/18 18:12:11 [notice] 1#1: worker process 27 exited with code 0
+2022/02/18 18:12:11 [notice] 1#1: exit
+2022/02/18 18:12:13 [notice] 1#1: using the "epoll" event method
+2022/02/18 18:12:13 [notice] 1#1: nginx/1.21.3
+2022/02/18 18:12:13 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2022/02/18 18:12:13 [notice] 1#1: OS: Linux 5.13.0-28-generic
+2022/02/18 18:12:13 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/02/18 18:12:13 [notice] 1#1: start worker processes
+2022/02/18 18:12:13 [notice] 1#1: start worker process 24
+2022/02/18 18:12:13 [notice] 1#1: start worker process 25
+2022/02/18 18:12:13 [notice] 1#1: start worker process 26
+2022/02/18 18:12:13 [notice] 1#1: start worker process 27
+2022/02/18 18:12:13 [notice] 1#1: start worker process 28
+2022/02/18 18:12:13 [notice] 1#1: start worker process 29
+2022/02/18 18:12:13 [notice] 1#1: start worker process 30
+2022/02/18 18:12:13 [notice] 1#1: start worker process 31
+2022/02/18 18:12:17 [error] 24#24: *1 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8888"
+2022/02/18 18:12:17 [error] 24#24: *1 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8888"
+2022/02/18 18:12:18 [error] 24#24: *1 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8888"
+2022/02/18 18:12:18 [error] 24#24: *1 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8888"
+2022/02/18 18:12:25 [info] 24#24: *2 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 18:12:25 [info] 24#24: *1 client 127.0.0.1 closed keepalive connection
+2022/02/18 18:12:40 [error] 24#24: *3 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8888"
+2022/02/18 18:12:40 [error] 24#24: *3 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET / HTTP/1.1", host: "localhost:8888"
+2022/02/18 18:12:45 [info] 24#24: *4 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 18:12:45 [info] 24#24: *3 client 127.0.0.1 closed keepalive connection
+2022/02/18 18:13:06 [error] 24#24: *5 open() "/etc/nginx/html/static/js/bundle.js" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 18:13:06 [error] 24#24: *5 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 18:13:06 [error] 24#24: *8 open() "/etc/nginx/html/manifest.json" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 18:13:06 [error] 24#24: *8 open() "/etc/nginx/html/404.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", host: "localhost:8888", referrer: "http://localhost:8888/admin/"
+2022/02/18 18:13:15 [info] 24#24: *6 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 18:13:15 [info] 24#24: *5 client 127.0.0.1 closed keepalive connection
+2022/02/18 18:13:15 [info] 24#24: *8 client 127.0.0.1 closed keepalive connection
+2022/02/18 18:57:40 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/02/18 18:57:40 [notice] 28#28: gracefully shutting down
+2022/02/18 18:57:40 [notice] 25#25: gracefully shutting down
+2022/02/18 18:57:40 [notice] 29#29: gracefully shutting down
+2022/02/18 18:57:40 [notice] 31#31: gracefully shutting down
+2022/02/18 18:57:40 [notice] 29#29: exiting
+2022/02/18 18:57:40 [notice] 24#24: gracefully shutting down
+2022/02/18 18:57:40 [notice] 26#26: gracefully shutting down
+2022/02/18 18:57:40 [notice] 27#27: gracefully shutting down
+2022/02/18 18:57:40 [notice] 30#30: gracefully shutting down
+2022/02/18 18:57:40 [notice] 27#27: exiting
+2022/02/18 18:57:40 [notice] 30#30: exiting
+2022/02/18 18:57:40 [notice] 29#29: exit
+2022/02/18 18:57:40 [notice] 28#28: exiting
+2022/02/18 18:57:40 [notice] 30#30: exit
+2022/02/18 18:57:40 [notice] 28#28: exit
+2022/02/18 18:57:40 [notice] 27#27: exit
+2022/02/18 18:57:40 [notice] 26#26: exiting
+2022/02/18 18:57:40 [notice] 31#31: exiting
+2022/02/18 18:57:40 [notice] 31#31: exit
+2022/02/18 18:57:40 [notice] 26#26: exit
+2022/02/18 18:57:40 [notice] 25#25: exiting
+2022/02/18 18:57:40 [notice] 25#25: exit
+2022/02/18 18:57:40 [notice] 24#24: exiting
+2022/02/18 18:57:40 [notice] 24#24: exit
+2022/02/18 18:57:40 [notice] 1#1: signal 17 (SIGCHLD) received from 25
+2022/02/18 18:57:40 [notice] 1#1: worker process 25 exited with code 0
+2022/02/18 18:57:40 [notice] 1#1: worker process 24 exited with code 0
+2022/02/18 18:57:40 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 18:57:40 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2022/02/18 18:57:40 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/02/18 18:57:40 [notice] 1#1: worker process 30 exited with code 0
+2022/02/18 18:57:40 [notice] 1#1: worker process 31 exited with code 0
+2022/02/18 18:57:40 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 18:57:40 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2022/02/18 18:57:40 [notice] 1#1: worker process 27 exited with code 0
+2022/02/18 18:57:40 [notice] 1#1: worker process 29 exited with code 0
+2022/02/18 18:57:40 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 18:57:40 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/02/18 18:57:40 [notice] 1#1: worker process 28 exited with code 0
+2022/02/18 18:57:40 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 18:57:40 [notice] 1#1: signal 17 (SIGCHLD) received from 26
+2022/02/18 18:57:40 [notice] 1#1: worker process 26 exited with code 0
+2022/02/18 18:57:40 [notice] 1#1: exit
+2022/02/18 18:57:42 [notice] 1#1: using the "epoll" event method
+2022/02/18 18:57:42 [notice] 1#1: nginx/1.21.3
+2022/02/18 18:57:42 [notice] 1#1: built by gcc 8.3.0 (Debian 8.3.0-6) 
+2022/02/18 18:57:42 [notice] 1#1: OS: Linux 5.13.0-28-generic
+2022/02/18 18:57:42 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/02/18 18:57:42 [notice] 1#1: start worker processes
+2022/02/18 18:57:42 [notice] 1#1: start worker process 24
+2022/02/18 18:57:42 [notice] 1#1: start worker process 25
+2022/02/18 18:57:42 [notice] 1#1: start worker process 26
+2022/02/18 18:57:42 [notice] 1#1: start worker process 27
+2022/02/18 18:57:42 [notice] 1#1: start worker process 28
+2022/02/18 18:57:42 [notice] 1#1: start worker process 29
+2022/02/18 18:57:42 [notice] 1#1: start worker process 30
+2022/02/18 18:57:42 [notice] 1#1: start worker process 31
+2022/02/18 18:59:20 [info] 25#25: *2 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 18:59:55 [info] 24#24: *1 client 127.0.0.1 closed keepalive connection
+2022/02/18 18:59:55 [info] 24#24: *5 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:14:23 [info] 24#24: *20 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while reading upstream, client: 127.0.0.1, server: _, request: "GET /images/back-code.png HTTP/1.1", upstream: "http://172.17.0.1:3000/images/back-code.png", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:14:23 [info] 24#24: *8 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while reading upstream, client: 127.0.0.1, server: _, request: "GET /images/back-ray.png HTTP/1.1", upstream: "http://172.17.0.1:3000/images/back-ray.png", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:14:23 [info] 24#24: *15 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while reading upstream, client: 127.0.0.1, server: _, request: "GET /images/about.jpg HTTP/1.1", upstream: "http://172.17.0.1:3000/images/about.jpg", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:14:26 [info] 24#24: *25 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:14:26 [info] 24#24: *34 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:14:26 [info] 24#24: *27 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:14:31 [info] 24#24: *44 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:14:31 [info] 24#24: *46 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:14:31 [info] 24#24: *49 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:06 [info] 24#24: *54 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:06 [info] 24#24: *52 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:11 [info] 24#24: *57 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:11 [info] 24#24: *67 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:11 [info] 24#24: *65 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:11 [info] 24#24: *56 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:11 [info] 24#24: *74 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:16 [info] 24#24: *79 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:41 [info] 24#24: *81 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:41 [info] 24#24: *86 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:41 [info] 24#24: *88 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:46 [info] 24#24: *97 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:46 [info] 24#24: *99 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:46 [info] 24#24: *101 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:46 [info] 24#24: *92 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:15:46 [info] 24#24: *109 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:22:36 [info] 24#24: *126 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:22:36 [info] 24#24: *128 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:22:36 [info] 24#24: *115 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:22:36 [info] 24#24: *114 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:22:36 [info] 24#24: *135 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:23:40 [info] 24#24: *122 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:23:40 [info] 24#24: *124 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:23:41 [info] 24#24: *147 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:23:41 [info] 24#24: *140 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:23:46 [info] 24#24: *158 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:23:46 [info] 24#24: *160 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:24:37 [info] 24#24: *148 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:24:37 [info] 24#24: *151 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:24:41 [info] 24#24: *172 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:24:41 [info] 24#24: *182 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:24:41 [info] 24#24: *165 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:24:41 [info] 24#24: *186 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:25:15 [error] 24#24: *174 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:25:15 [error] 24#24: *174 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:25:15 [error] 24#24: *176 upstream prematurely closed connection while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:25:15 [error] 24#24: *176 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:25:21 [info] 24#24: *174 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:25:21 [info] 24#24: *176 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:25:28 [error] 24#24: *200 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/event HTTP/1.1", upstream: "http://172.17.0.1:8000/event", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:25:28 [error] 24#24: *200 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /api/v1/event HTTP/1.1", upstream: "http://172.17.0.1:8000/event", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:25:28 [error] 24#24: *200 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:25:28 [error] 24#24: *200 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:25:28 [error] 24#24: *199 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:25:28 [error] 24#24: *199 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:25:31 [info] 24#24: *191 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:25:31 [info] 24#24: *199 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:25:31 [info] 24#24: *200 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:25:31 [info] 24#24: *190 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:25:36 [info] 24#24: *211 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:25:36 [info] 24#24: *209 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:25:46 [info] 24#24: *216 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 19:25:46 [info] 24#24: *215 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:25:51 [info] 24#24: *228 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:25:51 [info] 24#24: *219 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:25:51 [info] 24#24: *237 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:27:16 [error] 24#24: *226 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:27:16 [error] 24#24: *226 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:27:16 [error] 24#24: *224 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:27:16 [error] 24#24: *224 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:27:21 [info] 24#24: *226 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:27:21 [info] 24#24: *224 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:28:45 [info] 24#24: *241 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888"
+2022/02/18 19:28:57 [info] 24#24: *244 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888"
+2022/02/18 19:29:10 [info] 24#24: *246 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888"
+2022/02/18 19:29:23 [info] 24#24: *248 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888"
+2022/02/18 19:30:01 [info] 24#24: *265 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:30:01 [info] 24#24: *251 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:30:01 [info] 24#24: *263 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:30:01 [info] 24#24: *250 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:30:06 [info] 24#24: *270 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:30:06 [info] 24#24: *272 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:30:06 [info] 24#24: *274 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:30:06 [info] 24#24: *276 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:30:11 [info] 24#24: *261 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:30:11 [info] 24#24: *259 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:30:16 [info] 24#24: *293 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:30:16 [info] 24#24: *299 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:30:16 [info] 24#24: *281 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:30:16 [info] 24#24: *279 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:31:41 [error] 24#24: *291 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:31:41 [error] 24#24: *291 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:31:41 [error] 24#24: *289 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:31:41 [error] 24#24: *289 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:31:46 [info] 24#24: *291 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:31:46 [info] 24#24: *289 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:31:49 [info] 24#24: *306 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888"
+2022/02/18 19:32:43 [info] 24#24: *308 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888"
+2022/02/18 19:38:01 [error] 24#24: *321 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/event HTTP/1.1", upstream: "http://172.17.0.1:8000/event", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:38:01 [error] 24#24: *321 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /api/v1/event HTTP/1.1", upstream: "http://172.17.0.1:8000/event", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:38:01 [error] 24#24: *321 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:38:01 [error] 24#24: *321 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /api/v1/person/speaker HTTP/1.1", upstream: "http://172.17.0.1:8000/person/speaker", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:38:01 [error] 24#24: *321 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:38:01 [error] 24#24: *321 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /api/v1/person/staff HTTP/1.1", upstream: "http://172.17.0.1:8000/person/staff", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:38:01 [info] 24#24: *311 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:38:01 [info] 24#24: *321 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:38:01 [info] 24#24: *319 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:38:01 [info] 24#24: *310 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:38:06 [info] 24#24: *328 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:38:06 [info] 24#24: *331 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:39:41 [info] 24#24: *337 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:39:41 [info] 24#24: *345 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:39:41 [info] 24#24: *344 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:39:41 [info] 24#24: *338 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:39:41 [info] 24#24: *349 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:39:41 [info] 24#24: *358 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:40:16 [info] 24#24: *363 client closed connection while waiting for request, client: 127.0.0.1, server: 0.0.0.0:8888
+2022/02/18 19:40:21 [info] 24#24: *372 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:40:21 [info] 24#24: *374 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:40:21 [info] 24#24: *370 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:40:21 [info] 24#24: *362 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:40:21 [info] 24#24: *381 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:06 [info] 24#24: *384 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:06 [info] 24#24: *389 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:06 [info] 24#24: *391 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:16 [info] 24#24: *394 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:16 [info] 24#24: *402 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:16 [info] 24#24: *406 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:16 [info] 24#24: *404 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:16 [info] 24#24: *393 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:16 [info] 24#24: *412 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:21 [info] 24#24: *416 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:21 [info] 24#24: *426 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:21 [info] 24#24: *424 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:21 [info] 24#24: *415 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:41:21 [info] 24#24: *433 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:42:46 [info] 24#24: *436 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:42:46 [info] 24#24: *441 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:42:46 [info] 24#24: *443 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:43:11 [info] 24#24: *451 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:43:11 [info] 24#24: *456 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:43:11 [info] 24#24: *458 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:43:16 [info] 24#24: *464 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:43:16 [info] 24#24: *460 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:43:16 [info] 24#24: *466 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:44:04 [error] 24#24: *469 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", upstream: "http://172.17.0.1:3000/manifest.json", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:44:04 [error] 24#24: *469 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /manifest.json HTTP/1.1", upstream: "http://172.17.0.1:3000/manifest.json", host: "localhost:8888", referrer: "http://localhost:8888/"
+2022/02/18 19:44:04 [error] 24#24: *471 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js.map HTTP/1.1", upstream: "http://172.17.0.1:3000/static/js/bundle.js.map", host: "localhost:8888"
+2022/02/18 19:44:04 [error] 24#24: *471 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /static/js/bundle.js.map HTTP/1.1", upstream: "http://172.17.0.1:3000/static/js/bundle.js.map", host: "localhost:8888"
+2022/02/18 19:44:05 [error] 24#24: *473 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /main.84b3e79541117e684cc7.hot-update.js.map HTTP/1.1", upstream: "http://172.17.0.1:3000/main.84b3e79541117e684cc7.hot-update.js.map", host: "localhost:8888"
+2022/02/18 19:44:05 [error] 24#24: *473 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /main.84b3e79541117e684cc7.hot-update.js.map HTTP/1.1", upstream: "http://172.17.0.1:3000/main.84b3e79541117e684cc7.hot-update.js.map", host: "localhost:8888"
+2022/02/18 19:44:05 [error] 24#24: *471 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /main.d994577392498d81deb1.hot-update.js.map HTTP/1.1", upstream: "http://172.17.0.1:3000/main.d994577392498d81deb1.hot-update.js.map", host: "localhost:8888"
+2022/02/18 19:44:05 [error] 24#24: *471 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /main.d994577392498d81deb1.hot-update.js.map HTTP/1.1", upstream: "http://172.17.0.1:3000/main.d994577392498d81deb1.hot-update.js.map", host: "localhost:8888"
+2022/02/18 19:44:05 [error] 24#24: *476 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /main.0e6e90c2831a1ae40015.hot-update.js.map HTTP/1.1", upstream: "http://172.17.0.1:3000/main.0e6e90c2831a1ae40015.hot-update.js.map", host: "localhost:8888"
+2022/02/18 19:44:05 [error] 24#24: *476 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /main.0e6e90c2831a1ae40015.hot-update.js.map HTTP/1.1", upstream: "http://172.17.0.1:3000/main.0e6e90c2831a1ae40015.hot-update.js.map", host: "localhost:8888"
+2022/02/18 19:44:05 [error] 24#24: *477 connect() failed (111: Connection refused) while connecting to upstream, client: 127.0.0.1, server: _, request: "GET /main.aead35869510c0d6af5a.hot-update.js.map HTTP/1.1", upstream: "http://172.17.0.1:3000/main.aead35869510c0d6af5a.hot-update.js.map", host: "localhost:8888"
+2022/02/18 19:44:05 [error] 24#24: *477 open() "/etc/nginx/html/50x.html" failed (2: No such file or directory), client: 127.0.0.1, server: _, request: "GET /main.aead35869510c0d6af5a.hot-update.js.map HTTP/1.1", upstream: "http://172.17.0.1:3000/main.aead35869510c0d6af5a.hot-update.js.map", host: "localhost:8888"
+2022/02/18 19:44:11 [info] 24#24: *473 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:44:11 [info] 24#24: *471 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:44:11 [info] 24#24: *476 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:44:11 [info] 24#24: *477 client 127.0.0.1 closed keepalive connection
+2022/02/18 19:44:11 [info] 24#24: *469 client 127.0.0.1 closed keepalive connection
+2022/02/18 20:25:21 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2022/02/18 20:25:21 [notice] 24#24: gracefully shutting down
+2022/02/18 20:25:21 [notice] 25#25: gracefully shutting down
+2022/02/18 20:25:21 [notice] 28#28: gracefully shutting down
+2022/02/18 20:25:21 [notice] 27#27: gracefully shutting down
+2022/02/18 20:25:21 [notice] 29#29: gracefully shutting down
+2022/02/18 20:25:21 [notice] 31#31: gracefully shutting down
+2022/02/18 20:25:21 [notice] 28#28: exiting
+2022/02/18 20:25:21 [notice] 31#31: exiting
+2022/02/18 20:25:21 [notice] 30#30: gracefully shutting down
+2022/02/18 20:25:21 [notice] 26#26: gracefully shutting down
+2022/02/18 20:25:21 [notice] 24#24: exiting
+2022/02/18 20:25:21 [notice] 29#29: exiting
+2022/02/18 20:25:21 [notice] 28#28: exit
+2022/02/18 20:25:21 [notice] 24#24: exit
+2022/02/18 20:25:21 [notice] 29#29: exit
+2022/02/18 20:25:21 [notice] 31#31: exit
+2022/02/18 20:25:21 [notice] 30#30: exiting
+2022/02/18 20:25:21 [notice] 25#25: exiting
+2022/02/18 20:25:21 [notice] 30#30: exit
+2022/02/18 20:25:21 [notice] 25#25: exit
+2022/02/18 20:25:21 [notice] 27#27: exiting
+2022/02/18 20:25:21 [notice] 27#27: exit
+2022/02/18 20:25:21 [notice] 26#26: exiting
+2022/02/18 20:25:21 [notice] 26#26: exit
+2022/02/18 20:25:21 [notice] 1#1: signal 17 (SIGCHLD) received from 29
+2022/02/18 20:25:21 [notice] 1#1: worker process 24 exited with code 0
+2022/02/18 20:25:21 [notice] 1#1: worker process 25 exited with code 0
+2022/02/18 20:25:21 [notice] 1#1: worker process 29 exited with code 0
+2022/02/18 20:25:21 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 20:25:21 [notice] 1#1: signal 17 (SIGCHLD) received from 28
+2022/02/18 20:25:21 [notice] 1#1: worker process 26 exited with code 0
+2022/02/18 20:25:21 [notice] 1#1: worker process 27 exited with code 0
+2022/02/18 20:25:21 [notice] 1#1: worker process 28 exited with code 0
+2022/02/18 20:25:21 [notice] 1#1: worker process 31 exited with code 0
+2022/02/18 20:25:21 [notice] 1#1: signal 29 (SIGIO) received
+2022/02/18 20:25:21 [notice] 1#1: signal 17 (SIGCHLD) received from 30
+2022/02/18 20:25:21 [notice] 1#1: worker process 30 exited with code 0
+2022/02/18 20:25:21 [notice] 1#1: exit

@@ -1,0 +1,8 @@
+2022/02/18 17:50:01 [warn] 1#1: "send_lowat" is not supported, ignored in /etc/nginx/nginx.conf:49
+2022/02/18 17:50:01 [warn] 1#1: "proxy_send_lowat" is not supported, ignored in /etc/nginx/nginx.conf:79
+2022/02/18 17:54:58 [warn] 1#1: "send_lowat" is not supported, ignored in /etc/nginx/nginx.conf:49
+2022/02/18 17:54:58 [warn] 1#1: "proxy_send_lowat" is not supported, ignored in /etc/nginx/nginx.conf:79
+2022/02/18 18:12:13 [warn] 1#1: "send_lowat" is not supported, ignored in /etc/nginx/nginx.conf:49
+2022/02/18 18:12:13 [warn] 1#1: "proxy_send_lowat" is not supported, ignored in /etc/nginx/nginx.conf:79
+2022/02/18 18:57:42 [warn] 1#1: "send_lowat" is not supported, ignored in /etc/nginx/nginx.conf:49
+2022/02/18 18:57:42 [warn] 1#1: "proxy_send_lowat" is not supported, ignored in /etc/nginx/nginx.conf:79
