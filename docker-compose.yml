@@ -1,5 +1,9 @@
 version: "3.9"
 services:
+  q-redis:  
+    image: redis:6.2.6
+    ports:
+      - "6379:6379"
   q-nginx:
     image: nginx
     network_mode: "host"
